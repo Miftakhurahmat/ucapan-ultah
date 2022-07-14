@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Selamat Ulang Tahun</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Satisfy&display=swap"
+		rel="stylesheet">
+	<link
+		rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<link rel="stylesheet" href="css/output.css">
+</head>
+
+<body class="font-poppins  bg-gradient-to-bl from-cyan-300 via-purple-400 to-pink-300">
+	<div class="container mx-auto mt-5 rounded-xl overflow-hidden">
+		<div class="container mx-auto max-w-4xl bg-gradient-to-br from-pink-100 to-pink-600 rounded-b-lg">
+			<div class="h-96 overflow-hidden">
+				<img class="w-full" src="img/confetti.gif" alt="conveti">
+			</div>
+			<div class="flex justify-center px-5 -mt-80 -mb-2">
+				<h1 class="text-3xl font-satisfy text-white p-4 bg-pink-500 rounded-2xl shadow-lg">Hai...</h1>
+			</div>
+			<div class="flex justify-center px-5 mb-5">
+				<h1 class="text-5xl font-satisfy text-white p-6 bg-pink-500 rounded-2xl shadow-lg">Tyara Azahra</h1>
+			</div>
+			<div class="flex justify-center px-5 -mt-8 mb-3">
+				<span class="block h-60 w-60">
+					<img class="mx-auto rounded-xl p-1.5 bg-pink-500 animate-[wiggle_1s_ease-in-out_infinite]"
+						src="./img/ara.jpg" alt="miftah">
+				</span>
+			</div>
+			<div class="flex justify-center">
+				<span>
+					<img src="./img/cake2.gif" alt="" class="w-80 h-80 pt-7 rounded-xl sm:h-96 sm:w-96" >
+				</span>
+			</div>
+			<div class="flex justify-center">
+				<h3 class="font-satisfy text-5xl my-7 text-yellow-200">19 Years Old</h3>
+			</div>
+		</div>
+		<div class="flex justify-center my-3">
+			<button type="button" id="buttonAlert" class="mt-10 bg-pink-500 px-10 py-4 rounded-full text-white font-semibold font-inter block mx-auto hover:bg-pink-600 active:bg-pink-700 focus:ring focus:ring-pink-300" >Click Me !!!</button>
+		</div>
+		<div class="flex justify-center my-3">
+			<button type="button" id="buttonBonus" class="bg-purple-500 px-10 py-4 rounded-full text-white font-semibold font-inter block mx-auto hover:bg-purple-600 active:bg-purple-700 focus:ring focus:ring-purple-300" >BONUS</button>
+		</div>
+	</div>
+
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script>
+		const buttonAlert = document.querySelector('#buttonAlert');
+		const buttonBonus = document.querySelector('#buttonBonus');
+
+		buttonAlert.addEventListener('click', function(){
+			Swal.fire({
+				title: 'Selamat Ulang Tahun Ke-19 ARAAAA💕💕',
+				text: 'Semoga Kedepannya sukses terus ya ARA..., dan apa yang diinginkan tercapai semua AAMIIN...',
+				imageUrl: './img/2.jpg',
+				imageWidth: 250,
+				imageHeight: 250,
+				imageAlt: 'Custom image',
+				padding: '3em',
+				color: '#716add',
+				background: '#fff url(./img/paper.jpg)',
+				backdrop: `
+					rgba(0,0,123,0.4)
+					url("./img/kucing.gif")
+					left bottom
+					no-repeat
+				`,
+				showClass: {
+					popup: 'animate__animated animate__fadeInDown animate__slower'
+				},
+				hideClass: {
+					popup: 'animate__animated animate__fadeOutUp'
+				}
+			});
+		});
+		buttonBonus.addEventListener('click', function(){
+			Swal.fire({
+				title: 'Haloo ARAAAA ヾ(＠⌒ー⌒＠)ノ',
+				text: 'Ngga kerasa ya kita bisa deket sampe saat ini, yaa walaupun sekarang udah jarang chatan dan sering ngilang-ngilang wkwkwk...,, tpi aku ttep sneng sih bisa kenal sama Kamu. Apalagi waktu itu bisa ketemu langsung sama Ara rasanya ngga bisa diungkapin dengan kata-kata, tpi sayangnya cuma sebentar... pengen dehh bisa ketemu secara langsung lagi. Semoga nanti bisa terwujud. Sekian curhatan dari aku raa, dan pastinya mungkin kamu ngga baca sampai selesai karena kepanjangan wkwkwkw... terima kasih araa😉 ',
+				imageUrl: './img/3.jpg',
+				imageWidth: 250,
+				imageHeight: 250,
+				imageAlt: 'Custom image',
+				padding: '3em',
+				color: '#716add',
+				background: '#fff url(./img/paper.jpg)',
+				backdrop: `
+					rgba(0,0,123,0.4)
+					url("./img/nyancat.gif")
+					left bottom
+					no-repeat
+				`,
+				showClass: {
+					popup: 'animate__animated animate__fadeInDown animate__slower'
+				},
+				hideClass: {
+					popup: 'animate__animated animate__fadeOutUp'
+				}
+			});
+		});
+	</script>
+</body>
+
+</html>
